@@ -1,0 +1,85 @@
+/* Universal Rules */
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.dtoplink {
+  margin-right: 1.5rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dtoplink ul {
+  display: flex;
+}
+
+.dtoplink li {
+  margin-left: 1rem;
+}
+
+/* header */
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;    /*vertically align items in the container */
+  width: 100%;
+  height: 4rem;
+  z-index: 1;
+  background-color: white;
+}
+
+.logo {
+  margin-left: 1.5rem;
+  display: flex;
+  flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
+  align-items: center;  /*vertically align items in the container */
+  padding: auto 0;
+  font-size: 1.5rem;
+  border: 1px solid black;  /* DUMMY */
+}
+
+.logo img {
+  height: 2rem;
+}
+
+.logo .brand{
+  font-weight: bold;
+}
+
+.logo .brand2{
+
+}
+
+.mlink{
+  display: none;
+}
+
+/* Header ends */
+
+
+/* Footer begins */
+footer{
+  display: flex;
+  position: relative;
+  width: 100%;
+  top: 100rem;    /* DUMMY */
+}
+
+footer .content {
+  display: flex;
+  flex: 1 0 auto;   /* This rule stretches the .content box to the 100% width. */
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  border: 1px solid black;  /* DUMMY */
+}
+
+.claim {
+  margin-left: 1.5rem;
+  display: flex;
+  flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
+  align-items: center;  /*vertically align items in the container */
+}
+
+/* Footer ends */
