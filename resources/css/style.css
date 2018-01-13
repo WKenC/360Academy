@@ -2,13 +2,15 @@
 html {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
+  color: #555;
 }
 
 .dtoplink {
   margin-right: 1.5rem;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: flex-end;
+  border: 1px solid black;  /* DUMMY */
 }
 
 .dtoplink ul {
@@ -29,6 +31,7 @@ header {
   height: 4rem;
   z-index: 1;
   background-color: white;
+  border: 1px solid black;  /* DUMMY */
 }
 
 .logo {
@@ -73,7 +76,7 @@ header {
   display: flex;
   width: 60%;
   padding: 2rem 1.5rem;
-  border: 1px solid white;  /* DUMMY */
+  border: 1px solid blue;  /* DUMMY */
 }
 
 .bannerpicture img{
@@ -91,8 +94,8 @@ header {
 
 .bannercontent .slogan{
   display: flex;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.25rem;
+  font-weight: 700;
   padding: 0.5rem 3.25rem;
   color: #444;
 }
@@ -100,9 +103,9 @@ header {
 .bannercontent .words{
   display: flex;
   font-size: 2rem;
+  font-weight: bold;
   margin-top: 1.625rem;
   padding: 0.5rem 3.25rem;
-  color: #555;
 }
 
 .bannercontent .button{
@@ -119,6 +122,104 @@ header {
   color: #fee;
 }
 /* Banner ends */
+
+/* Information begins */
+#information{
+  position: relative;
+  width: 100%;
+  top: 4rem;
+  border: 1px solid red;  /* DUMMY */
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.info-main{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem;
+  border: 1px solid orange;  /* DUMMY */
+}
+
+.info-main .infopicture img{
+  width: 100%;
+}
+
+.info-main .slogan{
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.info-main .quote{
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.info-main .quotesource{
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.info-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
+  border: 1px solid purple;  /* DUMMY */
+}
+
+.info-side .box{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem auto;
+  border: 1px solid purple;  /* DUMMY */
+}
+
+.info-side .box .picture {
+  /*width: 35%;*/
+  height: auto;
+  padding: 1rem;
+  border: 1px dashed black;  /* DUMMY */
+}
+
+.info-side .box .picture img{
+  width: 100%;
+}
+
+.info-side .box .context{
+  width: 65%;
+  padding: 1rem;
+  border: 1px solid green;  /* DUMMY */
+}
+
+.info-side .box .context .title{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.info-side .box .context .info, .info-side .box .context .readmore{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+}
+
+.info-side a:link, .info-side a:visited{
+  color: #16f;
+}
+/* Information ends */
+
+/* Courses begins */
+
+/* Courses ends */
 
 /* Footer begins */
 footer{
