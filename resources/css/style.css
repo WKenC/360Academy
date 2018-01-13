@@ -1,4 +1,4 @@
-/* Universal Rules */
+/* Universal Rules begin */
 html {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
@@ -18,8 +18,9 @@ html {
 .dtoplink li {
   margin-left: 1rem;
 }
+/* Universal Rules end */
 
-/* header */
+/* Header begins */
 header {
   position: fixed;
   display: flex;
@@ -55,9 +56,69 @@ header {
 .mlink{
   display: none;
 }
-
 /* Header ends */
 
+/* Banner begins */
+#banner{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  top: 4rem;
+  background-color: #dadcda;
+}
+
+.bannerpicture{
+  display: flex;
+  width: 60%;
+  padding: 2rem 1.5rem;
+  border: 1px solid white;  /* DUMMY */
+}
+
+.bannerpicture img{
+  width: 100%;
+}
+
+.bannercontent{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 40%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bannercontent .slogan{
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.5rem 3.25rem;
+  color: #444;
+}
+
+.bannercontent .words{
+  display: flex;
+  font-size: 2rem;
+  margin-top: 1.625rem;
+  padding: 0.5rem 3.25rem;
+  color: #555;
+}
+
+.bannercontent .button{
+  display: flex;
+  font-size: 2rem;
+  margin-top: 1.625rem;
+  padding: 0.5rem 7.5rem;
+  background-color: #555;
+  border-radius: 1rem;   /* 1.425rem will turn button ends round */
+  /*border: 1px solid red;    /* DUMMY */
+}
+
+.bannercontent a:link, .bannercontent a:visited{
+  color: #fee;
+}
+/* Banner ends */
 
 /* Footer begins */
 footer{
@@ -81,5 +142,4 @@ footer .content {
   flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
   align-items: center;  /*vertically align items in the container */
 }
-
 /* Footer ends */
