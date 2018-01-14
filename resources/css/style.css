@@ -10,7 +10,7 @@ html {
   display: flex;
   flex: 1 0 auto;
   justify-content: flex-end;
-  border: 1px solid black;  /* DUMMY */
+  /*border: 1px solid black;  /* DUMMY */
 }
 
 .dtoplink ul {
@@ -31,7 +31,7 @@ header {
   height: 4rem;
   z-index: 1;
   background-color: white;
-  border: 1px solid black;  /* DUMMY */
+  /*border: 1px solid black;  /* DUMMY */
 }
 
 .logo {
@@ -41,19 +41,24 @@ header {
   align-items: center;  /*vertically align items in the container */
   padding: auto 0;
   font-size: 1.5rem;
-  border: 1px solid black;  /* DUMMY */
+  /*border: 1px solid black;  /* DUMMY */
 }
 
 .logo img {
-  height: 2rem;
+  height: 3.6rem;
 }
 
-.logo .brand{
+.logo ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo ul li:first-child{
   font-weight: bold;
 }
 
-.logo .brand2{
-
+.logo ul li:last-child{
+  color: #888;
 }
 
 .mlink{
@@ -76,7 +81,7 @@ header {
   display: flex;
   width: 60%;
   padding: 2rem 1.5rem;
-  border: 1px solid blue;  /* DUMMY */
+  /*border: 1px solid blue;  /* DUMMY */
 }
 
 .bannerpicture img{
@@ -128,10 +133,10 @@ header {
   position: relative;
   width: 100%;
   top: 4rem;
-  border: 1px solid red;  /* DUMMY */
+  /*border: 1px solid red;  /* DUMMY */
 }
 
-.container{
+#information .container{
   display: flex;
   flex-direction: row;
 }
@@ -141,7 +146,7 @@ header {
   flex-direction: column;
   width: 60%;
   padding: 2rem 1.5rem;
-  border: 1px solid orange;  /* DUMMY */
+  /*border: 1px solid orange;  /* DUMMY */
 }
 
 .info-main .infopicture img{
@@ -173,21 +178,21 @@ header {
   width: 40%;
   padding-top: 0.3rem;
   padding-bottom: 2rem;
-  border: 1px solid purple;  /* DUMMY */
+  /*border: 1px solid purple;  /* DUMMY */
 }
 
 .info-side .box{
   display: flex;
   flex-direction: row;
   padding: 2rem auto;
-  border: 1px solid purple;  /* DUMMY */
+  /*border: 1px solid purple;  /* DUMMY */
 }
 
 .info-side .box .picture {
   /*width: 35%;*/
   height: auto;
   padding: 1rem;
-  border: 1px dashed black;  /* DUMMY */
+  /*border: 1px dashed black;  /* DUMMY */
 }
 
 .info-side .box .picture img{
@@ -197,7 +202,7 @@ header {
 .info-side .box .context{
   width: 65%;
   padding: 1rem;
-  border: 1px solid green;  /* DUMMY */
+  /*border: 1px solid green;  /* DUMMY */
 }
 
 .info-side .box .context .title{
@@ -221,12 +226,113 @@ header {
 
 /* Courses ends */
 
+/* Thesis begins */
+#thesis{
+  position: relative;
+  width: 100%;
+  top: 4rem;
+  /*border: 1px solid red;  /* DUMMY */
+}
+
+#thesis .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#thesis .main-title{
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+
+#thesis .box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.box .videoclip{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto 1.5rem;
+  border: 1px solid red;  /* DUMMY */
+}
+
+.videoclip video{
+  width: 100%;
+}
+
+.videoclip .mainfeature{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.videoclip .quote{
+  font-size: 1.5rem;
+}
+
+.box .others{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 1.5rem;
+  /*padding-top: 0.3rem;*/
+  /*padding-bottom: 2rem;*/
+  border: 1px solid red;  /* DUMMY */
+}
+
+.others .design, .others .research{
+  display: flex;
+  flex-direction: row;
+}
+
+.others .design{
+  background-color: #dadcda;
+}
+
+.others .picture {
+  /*width: 35%;*/
+  height: auto;
+  padding: 1rem;
+  /*border: 1px dashed black;  /* DUMMY */
+}
+
+.others .picture img{
+  width: 100%;
+}
+
+.others .context{
+  width: 65%;
+  padding: 1rem;
+  /*border: 1px solid green;  /* DUMMY */
+}
+
+.others .context .title{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.others .context .info{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+}
+/* Thesis ends */
+
 /* Footer begins */
 footer{
   display: flex;
   position: relative;
   width: 100%;
-  top: 100rem;    /* DUMMY */
+  top: 4rem; /*100rem;    /* DUMMY */
+  border-top: 1px solid #dadcda;
 }
 
 footer .content {
@@ -234,7 +340,7 @@ footer .content {
   flex: 1 0 auto;   /* This rule stretches the .content box to the 100% width. */
   padding-top: 1rem;
   padding-bottom: 3rem;
-  border: 1px solid black;  /* DUMMY */
+  /*border: 1px solid black;  /* DUMMY */
 }
 
 .claim {
