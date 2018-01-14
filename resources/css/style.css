@@ -188,6 +188,10 @@ header {
   /*border: 1px solid purple;  /* DUMMY */
 }
 
+.info-side .guest{
+  background-color: #dadcda;
+}
+
 .info-side .box .picture {
   /*width: 35%;*/
   height: auto;
@@ -223,7 +227,77 @@ header {
 /* Information ends */
 
 /* Courses begins */
+#courses{
+  position: relative;
+  width: 100%;
+  top: 4rem;
+  background-color: #dadcda;
+  /*border: 1px solid red;  /* DUMMY */
+}
 
+#courses .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 4.5rem;
+  /*border: 1px solid black;  /* DUMMY */
+}
+
+#courses .slogan{
+  font-size: 2.75rem;
+  font-weight: bold;
+  align-items: center;
+  margin: 2rem auto;
+  /*border: 1px solid white;  /* DUMMY */
+}
+
+#courses .box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+  /*border: 1px solid red;  /* DUMMY */
+}
+
+#courses .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem auto;
+  /*border: 1px solid blue;  /* DUMMY */
+}
+
+#courses .slot, #courses .midslot{
+  width: 32%;
+  background-color: #fff;
+  /*border: 1px solid green;  /* DUMMY */
+}
+
+#courses .midslot{
+  margin: auto 1rem;
+}
+
+#courses .picture img{
+  width: 100%;
+}
+
+#courses .context{
+  margin: 1rem;
+}
+
+#courses .title{
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+#courses .offer{
+  font-size: 1.5rem;
+  margin: 0.5rem auto;
+}
+
+#courses .subjects{
+  font-size: 1.5rem;
+}
 /* Courses ends */
 
 /* Thesis begins */
