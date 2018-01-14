@@ -20,6 +20,10 @@ html {
 .dtoplink li {
   margin-left: 1rem;
 }
+
+.dtoplink a:link, .dtoplink a:visited{
+  color: #555;
+}
 /* Universal Rules end */
 
 /* Header begins */
@@ -34,7 +38,7 @@ header {
   /*border: 1px solid black;  /* DUMMY */
 }
 
-.logo {
+header .logo {
   margin-left: 1.5rem;
   display: flex;
   flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
@@ -59,6 +63,12 @@ header {
 
 .logo ul li:last-child{
   color: #888;
+}
+
+header ul li:hover{
+  font-weight: 700;
+  color: #aba;
+  transition: color 1s ease-in, font-weight 1s ease-out;
 }
 
 .mlink{
@@ -126,6 +136,10 @@ header {
 .bannercontent a:link, .bannercontent a:visited{
   color: #fee;
 }
+
+.bannercontent a:hover{
+  color: #cfc;
+}
 /* Banner ends */
 
 /* Information begins */
@@ -188,9 +202,14 @@ header {
   /*border: 1px solid purple;  /* DUMMY */
 }
 
-.info-side .guest{
+.info-side .box:hover{
   background-color: #dadcda;
+  transition: color 1000ms ease-in;
 }
+
+/*.info-side .guest{
+  background-color: #dadcda;
+}*/
 
 .info-side .box .picture {
   /*width: 35%;*/
@@ -240,14 +259,15 @@ header {
   flex-direction: column;
   justify-content: space-between;
   margin: 2rem 4.5rem;
+  padding-top: 2rem;
   /*border: 1px solid black;  /* DUMMY */
 }
 
 #courses .slogan{
   font-size: 2.75rem;
   font-weight: bold;
-  align-items: center;
-  margin: 2rem auto;
+  align-self: center;
+  margin-top: 2rem;
   /*border: 1px solid white;  /* DUMMY */
 }
 
@@ -271,6 +291,11 @@ header {
   width: 32%;
   background-color: #fff;
   /*border: 1px solid green;  /* DUMMY */
+}
+
+#courses .slot:hover, #courses .midslot:hover{
+  background-color: #aba;
+  transition: color 1000ms linear;
 }
 
 #courses .midslot{
@@ -328,12 +353,17 @@ header {
   margin-bottom: 2rem;
 }
 
+#thesis .videoclip:hover, #thesis .design:hover, #thesis .research:hover{
+  background-color: #aba;
+  transition: color 1000ms ease-in;
+}
+
 .box .videoclip{
   display: flex;
   flex-direction: column;
   width: 60%;
   margin: auto 1.5rem;
-  border: 1px solid red;  /* DUMMY */
+  /*border: 1px solid red;  /* DUMMY */
 }
 
 .videoclip video{
@@ -356,9 +386,7 @@ header {
   flex-direction: column;
   width: 40%;
   margin: 0 1.5rem;
-  /*padding-top: 0.3rem;*/
-  /*padding-bottom: 2rem;*/
-  border: 1px solid red;  /* DUMMY */
+  /*border: 1px solid red;  /* DUMMY */
 }
 
 .others .design, .others .research{
@@ -366,12 +394,11 @@ header {
   flex-direction: row;
 }
 
-.others .design{
+/*.others .design{
   background-color: #dadcda;
-}
+}*/
 
 .others .picture {
-  /*width: 35%;*/
   height: auto;
   padding: 1rem;
   /*border: 1px dashed black;  /* DUMMY */
