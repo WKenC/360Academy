@@ -10,7 +10,6 @@ html {
   display: flex;
   flex: 1 0 auto;
   justify-content: flex-end;
-  /*border: 1px solid black;  /* DUMMY */
 }
 
 .dtoplink ul {
@@ -36,7 +35,6 @@ header {
   height: 4rem;
   z-index: 1;
   background-color: white;
-  /*border: 1px solid black;  /* DUMMY */
 }
 
 header .logo {
@@ -44,9 +42,7 @@ header .logo {
   display: flex;
   flex: 1 1 auto;   /* This rule will create space between .logo div and nav. */
   align-items: center;  /*vertically align items in the container */
-  /*padding: auto 0;*/
   font-size: 1.5rem;
-  /*border: 1px solid black;  /* DUMMY */
 }
 
 .logo img {
@@ -119,7 +115,6 @@ header ul li:hover{
   display: flex;
   width: 60%;
   padding: 2rem 1.5rem;
-  /*border: 1px solid blue;  /* DUMMY */
 }
 
 .bannerpicture img{
@@ -160,7 +155,6 @@ header ul li:hover{
   padding: 0.5rem 7.5rem;
   background-color: #555;
   border-radius: 1rem;   /* 1.425rem will turn button ends round */
-  /*border: 1px solid red;    /* DUMMY */
 }
 
 .bannercontent a:link, .bannercontent a:visited{
@@ -208,7 +202,6 @@ header ul li:hover{
   width: 100%;
   min-width: 30rem;
   top: 4rem;
-  /*border: 1px solid red;  /* DUMMY */
 }
 
 #information .container{
@@ -221,7 +214,6 @@ header ul li:hover{
   flex-direction: column;
   width: 60%;
   padding: 2rem 1.5rem;
-  /*border: 1px solid orange;  /* DUMMY */
 }
 
 .info-main .infopicture img{
@@ -253,7 +245,6 @@ header ul li:hover{
   width: 40%;
   padding-top: 0.3rem;
   padding-bottom: 2rem;
-  /*border: 1px solid purple;  /* DUMMY */
 }
 
 .info-side .picture .mobile{
@@ -264,7 +255,6 @@ header ul li:hover{
   display: flex;
   flex-direction: row;
   padding: 2rem auto;
-  /*border: 1px solid purple;  /* DUMMY */
 }
 
 .info-side .box:hover{
@@ -272,15 +262,9 @@ header ul li:hover{
   transition: color 1000ms ease-in;
 }
 
-/*.info-side .guest{
-  background-color: #dadcda;
-}*/
-
 .info-side .box .picture {
-  /*width: 35%;*/
   height: auto;
   padding: 1rem;
-  /*border: 1px dashed black;  /* DUMMY */
 }
 
 .info-side .box .picture img{
@@ -290,7 +274,6 @@ header ul li:hover{
 .info-side .box .context{
   width: 65%;
   padding: 1rem;
-  /*border: 1px solid green;  /* DUMMY */
 }
 
 .info-side .box .context .title{
@@ -347,7 +330,6 @@ header ul li:hover{
   min-width: 30rem;
   top: 4rem;
   background-color: #dadcda;
-  /*border: 1px solid red;  /* DUMMY */
 }
 
 #courses .container{
@@ -356,7 +338,6 @@ header ul li:hover{
   justify-content: space-between;
   margin: 2rem 4.5rem;
   padding-top: 2rem;
-  /*border: 1px solid black;  /* DUMMY */
 }
 
 #courses .slogan{
@@ -364,7 +345,6 @@ header ul li:hover{
   font-weight: bold;
   align-self: center;
   margin-top: 2rem;
-  /*border: 1px solid white;  /* DUMMY */
 }
 
 #courses .box{
@@ -372,7 +352,6 @@ header ul li:hover{
   flex-direction: column;
   width: 100%;
   margin-bottom: 2rem;
-  /*border: 1px solid red;  /* DUMMY */
 }
 
 #courses .row{
@@ -380,13 +359,11 @@ header ul li:hover{
   flex-direction: row;
   justify-content: space-between;
   margin: 2rem auto;
-  /*border: 1px solid blue;  /* DUMMY */
 }
 
 #courses .slot, #courses .midslot{
   width: 32%;
   background-color: #fff;
-  /*border: 1px solid green;  /* DUMMY */
 }
 
 #courses .slot:hover, #courses .midslot:hover{
@@ -427,19 +404,16 @@ header ul li:hover{
   #courses{
     background-color: #efd;
     border-bottom: 1.5px solid #dadcda;
-    /*border: 1px solid gold;  /* DUMMY */
   }
 
   #courses .container{
     padding: 2rem 1rem;
     margin: 0 auto;
     justify-content: center;
-    /*border: 1px solid red;  /* DUMMY */
   }
 
   #courses .slogan{
     margin-bottom: 1rem;
-    /*border: 1px solid red;  /* DUMMY */
   }
 
   #courses .row{
@@ -447,8 +421,6 @@ header ul li:hover{
     padding: 0 auto;
     flex-direction: column;
     width: 100%;
-    /*justify-content: center;*/
-    /*border: 1px solid red;  /* DUMMY */
   }
 
   #courses .slot{
@@ -477,7 +449,6 @@ header ul li:hover{
   width: 100%;
   min-width: 30rem;
   top: 4rem;
-  /*border: 1px solid red;  /* DUMMY */
 }
 
 #thesis .container{
@@ -510,7 +481,6 @@ header ul li:hover{
   flex-direction: column;
   width: 60%;
   margin: auto 1.5rem;
-  /*border: 1px solid red;  /* DUMMY */
 }
 
 .videoclip video{
@@ -533,7 +503,6 @@ header ul li:hover{
   flex-direction: column;
   width: 40%;
   margin: 0 1.5rem;
-  /*border: 1px solid red;  /* DUMMY */
 }
 
 .others .design, .others .research{
@@ -544,7 +513,6 @@ header ul li:hover{
 .others .picture {
   height: auto;
   padding: 1rem;
-  /*border: 1px dashed black;  /* DUMMY */
 }
 
 .others .picture img{
@@ -554,7 +522,6 @@ header ul li:hover{
 .others .context{
   width: 65%;
   padding: 1rem;
-  /*border: 1px solid green;  /* DUMMY */
 }
 
 .others .context .title{
@@ -591,7 +558,7 @@ footer{
   position: relative;
   width: 100%;
   min-width: 30rem;
-  top: 4rem; /*100rem;    /* DUMMY */
+  top: 4rem;
   border-top: 1px solid #dadcda;
 }
 
@@ -600,7 +567,6 @@ footer .content {
   flex: 1 0 auto;   /* This rule stretches the .content box to the 100% width. */
   padding-top: 1rem;
   padding-bottom: 3rem;
-  /*border: 1px solid black;  /* DUMMY */
 }
 
 .claim {
