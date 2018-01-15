@@ -1,0 +1,101 @@
+/* Thesis begins */
+#thesis{
+  position: relative;
+  width: 100%;
+  top: 4rem;
+  /*border: 1px solid red;  /* DUMMY */
+}
+
+#thesis .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#thesis .main-title{
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+
+#thesis .box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#thesis .videoclip:hover, #thesis .design:hover, #thesis .research:hover{
+  background-color: #aba;
+  transition: color 1000ms ease-in;
+}
+
+.box .videoclip{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto 1.5rem;
+  /*border: 1px solid red;  /* DUMMY */
+}
+
+.videoclip video{
+  width: 100%;
+}
+
+.videoclip .mainfeature{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.videoclip .quote{
+  font-size: 1.5rem;
+}
+
+.box .others{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 1.5rem;
+  /*border: 1px solid red;  /* DUMMY */
+}
+
+.others .design, .others .research{
+  display: flex;
+  flex-direction: row;
+}
+
+/*.others .design{
+  background-color: #dadcda;
+}*/
+
+.others .picture {
+  height: auto;
+  padding: 1rem;
+  /*border: 1px dashed black;  /* DUMMY */
+}
+
+.others .picture img{
+  width: 100%;
+}
+
+.others .context{
+  width: 65%;
+  padding: 1rem;
+  /*border: 1px solid green;  /* DUMMY */
+}
+
+.others .context .title{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.others .context .info{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+}
+/* Thesis ends */

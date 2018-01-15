@@ -1,0 +1,24 @@
+/* Footer begins */
+footer{
+  display: flex;
+  position: relative;
+  width: 100%;
+  top: 4rem; /*100rem;    /* DUMMY */
+  border-top: 1px solid #dadcda;
+}
+
+footer .content {
+  display: flex;
+  flex: 1 0 auto;   /* This rule stretches the .content box to the 100% width. */
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  /*border: 1px solid black;  /* DUMMY */
+}
+
+.claim {
+  margin-left: 1.5rem;
+  display: flex;
+  flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
+  align-items: center;  /*vertically align items in the container */
+}
+/* Footer ends */

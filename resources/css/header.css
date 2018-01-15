@@ -1,0 +1,49 @@
+/* Header begins */
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;    /*vertically align items in the container */
+  width: 100%;
+  height: 4rem;
+  z-index: 1;
+  background-color: white;
+  /*border: 1px solid black;  /* DUMMY */
+}
+
+header .logo {
+  margin-left: 1.5rem;
+  display: flex;
+  flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
+  align-items: center;  /*vertically align items in the container */
+  padding: auto 0;
+  font-size: 1.5rem;
+  /*border: 1px solid black;  /* DUMMY */
+}
+
+.logo img {
+  height: 3.6rem;
+}
+
+.logo ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo ul li:first-child{
+  font-weight: bold;
+}
+
+.logo ul li:last-child{
+  color: #888;
+}
+
+header ul li:hover{
+  font-weight: 700;
+  color: #aba;
+  transition: color 1s ease-in, font-weight 1s ease-out;
+}
+
+.mlink{
+  display: none;
+}
+/* Header ends */

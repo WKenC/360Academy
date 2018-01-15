@@ -1,6 +1,6 @@
 /* Universal Rules begin */
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Libre Franklin', 'Roboto', 'Nunito Sans', Helvetica, sans-serif;
   font-size: 16px;
   color: #555;
 }
@@ -32,6 +32,7 @@ header {
   display: flex;
   align-items: center;    /*vertically align items in the container */
   width: 100%;
+  min-width: 30rem;
   height: 4rem;
   z-index: 1;
   background-color: white;
@@ -41,9 +42,9 @@ header {
 header .logo {
   margin-left: 1.5rem;
   display: flex;
-  flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
+  flex: 1 1 auto;   /* This rule will create space between .logo div and nav. */
   align-items: center;  /*vertically align items in the container */
-  padding: auto 0;
+  /*padding: auto 0;*/
   font-size: 1.5rem;
   /*border: 1px solid black;  /* DUMMY */
 }
@@ -74,6 +75,32 @@ header ul li:hover{
 .mlink{
   display: none;
 }
+
+@media only screen and (max-width: 700px){
+  .logo img{
+    height: 2rem;
+    width: inherit;
+  }
+
+  .logo ul, .dtoplink{
+    display: none;
+  }
+
+  .logo{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+  }
+
+  .mlink{
+    display: inline-flex;
+  }
+
+  .logo a:hover{
+    background-color: #dadcda;
+    transition: color 1s ease-in;
+  }
+}
 /* Header ends */
 
 /* Banner begins */
@@ -83,6 +110,7 @@ header ul li:hover{
   position: relative;
   align-items: center;
   width: 100%;
+  min-width: 30rem;
   top: 4rem;
   background-color: #dadcda;
 }
@@ -101,7 +129,7 @@ header ul li:hover{
 .bannercontent{
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   width: 40%;
   align-items: center;
   justify-content: space-around;
@@ -111,6 +139,7 @@ header ul li:hover{
   display: flex;
   font-size: 3.25rem;
   font-weight: 700;
+  line-height: 4rem;
   padding: 0.5rem 3.25rem;
   color: #444;
 }
@@ -119,6 +148,7 @@ header ul li:hover{
   display: flex;
   font-size: 2rem;
   font-weight: bold;
+  line-height: 2.75rem;
   margin-top: 1.625rem;
   padding: 0.5rem 3.25rem;
 }
@@ -140,12 +170,43 @@ header ul li:hover{
 .bannercontent a:hover{
   color: #cfc;
 }
+
+@media only screen and (max-width: 1200px){
+  .bannercontent .button{
+    margin-bottom: 2rem;
+    padding: auto 5rem;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  #banner{
+    flex-direction: column;
+    border-bottom: 1.5px solid #dadcda;
+  }
+  .bannerpicture, .bannercontent{
+    width: 100%;
+  }
+  .bannerpicture{
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+  .bannercontent .slogan, .bannercontent .words{
+    width: 95%;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .bannercontent .button{
+    padding: auto 3rem;
+  }
+}
 /* Banner ends */
 
 /* Information begins */
 #information{
   position: relative;
   width: 100%;
+  min-width: 30rem;
   top: 4rem;
   /*border: 1px solid red;  /* DUMMY */
 }
@@ -193,6 +254,10 @@ header ul li:hover{
   padding-top: 0.3rem;
   padding-bottom: 2rem;
   /*border: 1px solid purple;  /* DUMMY */
+}
+
+.info-side .picture .mobile{
+  display: none;
 }
 
 .info-side .box{
@@ -243,12 +308,43 @@ header ul li:hover{
 .info-side a:link, .info-side a:visited{
   color: #16f;
 }
+
+@media only screen and (max-width: 800px){
+  #information .container{
+    border-bottom: 1.5px solid #dadcda;
+  }
+  .info-main{
+    display: none;
+  }
+  .info-side{
+    width: 100%;
+  }
+  .info-side .box{
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem auto 2rem auto;
+  }
+  .info-side .picture .desktop{
+    display: none;
+  }
+  .info-side .picture .mobile{
+    display: flex;
+    width: 100%;
+  }
+  .info-side .context{
+    margin-left: 1rem;
+  }
+  .info-side .box .campus{
+    margin: 4rem auto;
+  }
+}
 /* Information ends */
 
 /* Courses begins */
 #courses{
   position: relative;
   width: 100%;
+  min-width: 30rem;
   top: 4rem;
   background-color: #dadcda;
   /*border: 1px solid red;  /* DUMMY */
@@ -313,15 +409,65 @@ header ul li:hover{
 #courses .title{
   font-size: 1.75rem;
   font-weight: bold;
+  line-height: 2.25rem;
 }
 
 #courses .offer{
   font-size: 1.5rem;
+  line-height: 2rem;
   margin: 0.5rem auto;
 }
 
 #courses .subjects{
   font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 800px){
+  #courses{
+    background-color: #efd;
+    border-bottom: 1.5px solid #dadcda;
+    /*border: 1px solid gold;  /* DUMMY */
+  }
+
+  #courses .container{
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    justify-content: center;
+    /*border: 1px solid red;  /* DUMMY */
+  }
+
+  #courses .slogan{
+    margin-bottom: 1rem;
+    /*border: 1px solid red;  /* DUMMY */
+  }
+
+  #courses .row{
+    margin: 0.1rem auto;
+    padding: 0 auto;
+    flex-direction: column;
+    width: 100%;
+    /*justify-content: center;*/
+    /*border: 1px solid red;  /* DUMMY */
+  }
+
+  #courses .slot{
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  #courses .midslot{
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  #courses .context .title{
+    padding: 1rem auto 1.5rem auto;
+  }
+
+  #courses .slot img, #courses .midslot img, #courses .context h3{
+    display: none;
+  }
 }
 /* Courses ends */
 
@@ -329,6 +475,7 @@ header ul li:hover{
 #thesis{
   position: relative;
   width: 100%;
+  min-width: 30rem;
   top: 4rem;
   /*border: 1px solid red;  /* DUMMY */
 }
@@ -394,10 +541,6 @@ header ul li:hover{
   flex-direction: row;
 }
 
-/*.others .design{
-  background-color: #dadcda;
-}*/
-
 .others .picture {
   height: auto;
   padding: 1rem;
@@ -425,6 +568,21 @@ header ul li:hover{
   margin-bottom: 0.5rem;
   line-height: 2rem;
 }
+
+@media only screen and (max-width: 800px){
+  #thesis .main-title{
+    margin: inherit inherit 1rem inherit;
+  }
+
+  .box .videoclip{
+    width: 100%;
+    margin: auto 0;
+  }
+
+  .box .others, .box .videoclip .mainfeature, .box .videoclip .quote{
+    display: none;
+  }
+}
 /* Thesis ends */
 
 /* Footer begins */
@@ -432,6 +590,7 @@ footer{
   display: flex;
   position: relative;
   width: 100%;
+  min-width: 30rem;
   top: 4rem; /*100rem;    /* DUMMY */
   border-top: 1px solid #dadcda;
 }
@@ -449,5 +608,24 @@ footer .content {
   display: flex;
   flex: 1 0 auto;   /* This rule will create space between .logo div and nav. */
   align-items: center;  /*vertically align items in the container */
+}
+
+@media only screen and (max-width: 800px){
+  footer{
+    border-top: none;
+  }
+
+  footer .content{
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  footer .dtoplink{
+    display: none;
+  }
+
+  .claim{
+    margin: 1rem auto 1rem 1.5rem;
+  }
 }
 /* Footer ends */
