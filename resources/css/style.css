@@ -132,23 +132,22 @@ header .logo {
 /* Banner begins */
 #banner{
   display: flex;
-  flex-direction: row;
-  position: relative;
+  flex-direction: column; /*row;*/
   align-items: center;
   width: 100%;
   min-width: 30rem;
-  top: 4rem;
+  max-height: 110vh;
   background-color: #dadcda;
+  /*border: 2.0 solid gold;*/
 }
 
 .jumbotron{
   text-align: center;
   align-items: center;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: inherit;
-  height: 40rem;
+  height: 100vh;
 }
 
 .jumbotron-physics{
@@ -171,14 +170,13 @@ header .logo {
 .jumbotron p{
   font-size: 2.5rem;
   color: white;
-  max-width: 30rem;
   margin: auto;
 }
 
-.carousel{ /*.bannerpicture{*/
+.carousel{
   display: flex;
-  width: 60%;
-  padding: 0.5rem;
+  width: 100%; /*60%;*/
+  /*border: 0.1 solid crimson;*/
 }
 
 .carousel img{ /*.bannerpicture img{*/
@@ -187,15 +185,20 @@ header .logo {
 
 .jumbotron .container-fluid{
   padding-top: 5rem;
+  /*border: 0.1 solid skyblue;*/
 }
 
 .bannercontent{
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
-  width: 40%;
+  flex: 1 1.25 initial;
+  position: relative;
+  top: -25rem;
+  width: 100%;
   align-items: center;
+  text-align: center;
   justify-content: space-around;
+  /*border: 0.1 solid darkgray;*/
 }
 
 .bannercontent .slogan{
@@ -203,7 +206,6 @@ header .logo {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 4rem;
-  padding: 0.5rem 3.25rem;
   color: #444;
 }
 
@@ -213,12 +215,11 @@ header .logo {
   font-weight: bold;
   line-height: 2.75rem;
   margin-top: 1.625rem;
-  padding: 0.5rem 3.25rem;
 }
 
 .bannercontent .button{
   display: flex;
-  white-space: nowrap;
+  flex-wrap: nowrap;
   font-size: 2rem;
   margin-top: 1.625rem;
   padding: 0.5rem 4.5rem;
@@ -241,6 +242,28 @@ header .logo {
   transition: All 100ms linear;
 }
 
+@media only screen and (max-height: 800px){
+  .bannercontent .slogan{
+    font-size: 2.75rem;
+  }
+  .bannercontent .words{
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-height: 700px){
+  #banner{
+    flex-direction: row;
+  }
+  .carousel{
+    width: 60%;
+  }
+  .bannercontent{
+    position: static;
+    width: 40%;
+  }
+}
+
 @media only screen and (max-width: 1200px){
   .bannercontent .button{
     margin-bottom: 2rem;
@@ -252,9 +275,6 @@ header .logo {
   .jumbotron p{
     font-size: 2rem;
   }
-  .jumbotron .container-fluid{
-    padding-top: 7.5rem;
-  }
 }
 
 @media only screen and (max-width: 800px){
@@ -262,54 +282,25 @@ header .logo {
     flex-direction: column;
     border-bottom: 1.5px solid #dadcda;
   }
-  .bannerpicture, .bannercontent{
+  .bannercontent{
     width: 100%;
   }
-  .bannerpicture{
-    padding: 0 1.5rem 2rem 1.5rem;
-  }
-  .bannercontent .slogan, .bannercontent .words{
-    width: 95%;
-    margin-left: 1rem;
-  }
   .jumbotron h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .jumbotron p{
-    font-size: 1.25rem;
-  }
-  .jumbotron .container-fluid{
-    padding-top: 11.5rem;
+    font-size: 1.5rem;
   }
 }
 
-@media only screen and (max-width: 480px){
-  .bannercontent .button{
-    padding: auto 3rem;
-  }
-  .jumbotron h1{
-    font-size: 1.5rem;
-  }
-  .jumbotron p{
-    font-size: 0.75rem;
-  }
-  .jumbotron .container-fluid{
-    padding-top: 5rem;
-  }
-}
 /* Banner ends */
 
 /* Information begins */
 #information{
-  position: relative;
   width: 100%;
   min-width: 30rem;
-  top: 4rem;
-}
-
-#information .container{
-  display: flex;
-  flex-direction: column; /*row;*/
+  top: -10rem;
+  /*border: 0.1 solid black;*/
 }
 
 .info-main{
@@ -319,6 +310,7 @@ header .logo {
   align-items: center;
   width: 100%;
   padding: 2rem 1.5rem;
+  /*border: 0.1 solid blue;*/
 }
 
 .info-main .infopicture img{
@@ -342,7 +334,6 @@ header .logo {
   font-size: 2rem;
   font-weight: bolder;
   margin-top: 1rem;
-  /*padding-bottom: 0.5rem;*/
 }
 
 .info-side{
@@ -351,8 +342,7 @@ header .logo {
   justify-content: space-between;
   height: 35rem;
   width: 100%;
-  /*padding-top: 0.3rem;*/
-  padding-bottom: 2rem;
+  /*border: 0.1 solid red;*/
 }
 
 .info-side .picture .mobile{
@@ -362,7 +352,6 @@ header .logo {
 .info-side .box{
   display: flex;
   flex-direction: column; /*row;*/
-  /*padding: auto 2rem;*/
   align-items: center;
   max-width: 32%;
   height: 35rem;
@@ -376,7 +365,6 @@ header .logo {
 }
 
 .info-side .box .picture {
-  display: flex;
   height: 50%;
   padding: 1rem;
 }
@@ -408,42 +396,45 @@ header .logo {
 }
 
 @media only screen and (max-width: 800px){
-  #information .container{
+  #information{
     border-bottom: 1.5px solid #dadcda;
   }
-  .info-main{
+  .info-main p, .info-side img, .info-side h4, .info-side a{
     display: none;
   }
+  .info-main .slogan{
+    font-size: 1.75rem;
+  }
+  .info-main .quote, .info-main .quotesource{
+    margin-top: 0;
+  }
   .info-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
     width: 100%;
   }
   .info-side .box{
-    width: 100%;
-    flex-direction: column;
-    padding: 1rem auto 2rem auto;
-  }
-  .info-side .picture .desktop{
-    display: none;
-  }
-  .info-side .picture .mobile{
     display: flex;
+    height: auto;
     width: 100%;
+    align-content: center;
   }
-  .info-side .context{
-    margin-left: 1rem;
-  }
-  .info-side .box .campus{
-    margin: 4rem auto;
+  .info-side .box .context{
+    flex-wrap: nowrap;
+    padding: 0;
+    width: 100%;
   }
 }
 /* Information ends */
 
 /* Courses begins */
 #courses{
-  position: relative;
   width: 100%;
   min-width: 30rem;
-  top: 4rem;
+  top: -120rem;
   background-color: #dadcda;
 }
 
@@ -452,7 +443,6 @@ header .logo {
   flex-direction: column;
   justify-content: space-between;
   margin: 2rem 4.5rem;
-  padding-top: 2rem;
 }
 
 #courses .slogan{
@@ -562,10 +552,8 @@ header .logo {
 
 /* Thesis begins */
 #thesis{
-  position: relative;
   width: 100%;
   min-width: 30rem;
-  top: 4rem;
 }
 
 #thesis .container{
@@ -675,10 +663,8 @@ header .logo {
 /* Footer begins */
 footer{
   display: flex;
-  position: relative;
   width: 100%;
   min-width: 30rem;
-  top: 4rem;
   border-top: 1px solid #dadcda;
   font-size: 0.85rem;
 }
@@ -686,8 +672,8 @@ footer{
 footer .content {
   display: flex;
   flex: 1 0 auto;   /* This rule stretches the .content box to the 100% width. */
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding: 1rem 0;
+  /*border: 0.1 solid darkgreen;*/
 }
 
 .claim {
